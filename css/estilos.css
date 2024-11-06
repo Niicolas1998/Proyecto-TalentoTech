@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+
+
+
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+}
+
+/* Barra de Navegación */
+header {
+    background-color: #b3e5fc; /* Azul claro */
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Esto asegura que el logo + enlaces estén a la izquierda y los iconos a la derecha */
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Enlaces de navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.9rem;
+    margin-left: 0; /* Asegura que los enlaces estén alineados a la izquierda */
+}
+
+header nav ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif; /* Aquí se aplica la fuente Orbitron */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaciado de las letras */
+    text-transform: uppercase; /* Mayúsculas */
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #81d4fa; /* Azul más oscuro */
+    border-radius: 4px;
+}
+
+/* Iconos del carrito y login */
+.nav-icons {
+    display: flex;
+    gap: 1.5rem; /* Aumenta el espacio entre los iconos */
+    margin-left: auto; /* Esto alinea los iconos a la derecha */
+}
+
+.nav-icons .icon {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.nav-icons .icon:hover {
+    color: #0277bd; /* Azul oscuro */
+}
+
+#hero {
+    background: url('../assets/img/Fondo\ frio\ \(1\).png') no-repeat center center/cover; /* Imagen de fondo */
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Capa oscura semitransparente para mejorar la visibilidad del texto */
+    z-index: 1;
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+#hero h1 {
+    font-family: 'Orbitron', sans-serif; /* Aplica la fuente Orbitron */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra más marcada para contraste */
+    margin-bottom: 1rem;
+}
+#hero p {
+    font-size: 1.2rem; /* Reducir tamaño de texto */
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-banner {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-banner:hover {
+    background-color: #01579b;
+}
+#hero {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-size: cover;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/img/Fondo\ frio\ \(1\).png') no-repeat center center/cover; /* Imagen de fondo */
+    opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo */
+    z-index: -1; /* Asegura que la imagen esté debajo del contenido */
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+#hero h1 {
+    font-size: 2.5rem; /* Hacer el texto más pequeño */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra más marcada para contraste */
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem; /* Reducir tamaño de texto */
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-banner {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-banner:hover {
+    background-color: #01579b;
+}
+
+
+
+
+
+
+/* Sección ¿Qué ofrecemos? */
+#que-ofrecemos {
+    padding: 4rem 1rem;
+    background-color: #f1f8e9; /* Fondo suave */
+    text-align: center;
+    color: #2c3e50;
+}
+
+#que-ofrecemos h2 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 2rem;
+}
+
+.ofrecemos-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cuadrícula flexible */
+    gap: 2rem;
+    justify-items: center;
+}
+
+.ofrecemos-item {
+    background-color: #ffffff;
+    border: 1px solid #b2ebf2;
+    padding: 2rem;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ofrecemos-item img {
+    width: 50px; /* Ajusta el tamaño del icono */
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.ofrecemos-item h3 {
+    font-size: 1.5rem;
+    color: #006064;
+    margin-bottom: 1rem;
+}
+
+.ofrecemos-item p {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.ofrecemos-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Sección de Ofertas Especiales  PAGINA PRODUCTOS*/
+#ofertas {
+    
+    padding: 3rem;
+    background-color: #e0f2f1;
+}
+
+#ofertas h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 2rem;
+}
+
+.productos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #b2ebf2;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    color: #006064;
+}
+
+.producto p {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.producto .precio {
+    font-size: 1.2rem;
+    color: #0277bd;
+    margin: 0.5rem 0;
+}
+
+.btn {
+    background-color: #4fc3f7;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #29b6f6;
+}
+
+/* Sección de Productos Destacados */
+#productos-destacados {
+    padding: 3rem;
+    background-color: #e0f2f1;
+}
+
+#productos-destacados h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 2rem;
+}
+
+/* Sección de Información sobre la Tienda */
+
+
+/* Estilo para la sección "Quiénes somos" */
+#quienes-somos {
+    background-color: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #2c3e50;
+    border-top: 2px solid #0277bd; /* Línea superior para destacar */
+}
+
+#quienes-somos h2 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 1.5rem;
+}
+
+#quienes-somos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: #2c3e50;
+}
+
+#quienes-somos a {
+    color: #0277bd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#quienes-somos a:hover {
+    color: #01579b;
+}
+
+/* Estilo para la sección "¿Por qué elegir?" */
+#por-que-elegir {
+    background-color: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #2c3e50;
+    border-top: 2px solid #0277bd; /* Línea superior para destacar */
+}
+
+#por-que-elegir h2 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 2rem;
+}
+
+#por-que-elegir p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.beneficio {
+    background-color: #f1f8e9; /* Fondo suave */
+    border: 1px solid #b2ebf2;
+    padding: 2rem;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beneficio h3 {
+    font-size: 1.6rem;
+    color: #006064;
+    margin-bottom: 1rem;
+}
+
+.beneficio p {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.beneficio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#nosotros-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+}
+
+#nosotros-info h2 {
+    font-size: 2rem;
+    color: #004d40;
+}
+
+#nosotros-info p {
+    font-size: 1.1rem;
+    color: #004d40;
+}
+
+/* Estilos de la fuente Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+/* Footer */
+.footer {
+    background: linear-gradient(45deg, #0277bd, #004d40);
+    color: #fff;
+    padding: 3rem 1.5rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos generales de las secciones del footer */
+.footer-section h3 {
+    font-family: 'Orbitron', sans-serif; /* Aquí se aplica la fuente Orbitron */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffee58;
+}
+
+.footer-section p, .footer-section a {
+    font-family: 'Orbitron', sans-serif; /* Aquí se aplica la fuente Orbitron */
+    color: #e0f7fa;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffee58;
+}
+
+/* Enlaces útiles */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.social-icons li a {
+    background-color: #004d40;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2rem;
+}
+
+.social-icons li a:hover {
+    background-color: #0277bd;
+    transform: scale(1.1);
+}
+
+/* Suscripción al boletín */
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #0277bd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.footer-newsletter button {
+    padding: 0.75rem;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: #0277bd;
+}
+
+/* Enlace "Volver arriba" */
+.back-to-top {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-to-top a {
+    color: #ffee58;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.back-to-top a:hover {
+    color: #e0f7fa;
+    top: -2px;
+    transition: top 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
