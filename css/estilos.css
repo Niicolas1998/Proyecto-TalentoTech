@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 
-
-
-
-
 /* Estilos Generales */
 * {
     margin: 0;
@@ -42,6 +38,7 @@ header .logo img {
     height: 40px;
     width: auto;
 }
+
 
 /* Enlaces de navegación */
 header nav ul {
@@ -93,8 +90,6 @@ header nav ul li a:hover {
     position: relative;
 }
 
-
-
 #hero::before {
     content: '';
     position: absolute;
@@ -110,7 +105,6 @@ header nav ul li a:hover {
     position: relative;
     z-index: 2;
 }
-
 
 #hero h1 {
     font-family: 'Orbitron', sans-serif; /* Aplica la fuente Orbitron */
@@ -142,66 +136,6 @@ header nav ul li a:hover {
 .btn-banner:hover {
     background-color: #01579b;
 }
-#hero {
-    position: relative;
-    color: #ffffff;
-    text-align: center;
-    padding: 4rem 1rem;
-    background-size: cover;
-}
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../assets/img/Fondo\ frio\ \(1\).png') no-repeat center center/cover; /* Imagen de fondo */
-    opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo */
-    z-index: -1; /* Asegura que la imagen esté debajo del contenido */
-}
-
-#hero .hero-content {
-    position: relative;
-    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
-}
-
-#hero h1 {
-    font-size: 2.5rem; /* Hacer el texto más pequeño */
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra más marcada para contraste */
-    margin-bottom: 1rem;
-}
-
-#hero p {
-    font-size: 1.2rem; /* Reducir tamaño de texto */
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-
-.btn-banner {
-    background-color: #0277bd;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
-    text-transform: uppercase;
-}
-
-.btn-banner:hover {
-    background-color: #01579b;
-}
-
-
-
-
-
 
 /* Sección ¿Qué ofrecemos? */
 #que-ofrecemos {
@@ -257,11 +191,8 @@ header nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* Sección de Ofertas Especiales  PAGINA PRODUCTOS*/
+/* Página de productos - Ofertas Especiales */
 #ofertas {
-    
     padding: 3rem;
     background-color: #e0f2f1;
 }
@@ -330,7 +261,7 @@ header nav ul li a:hover {
     background-color: #29b6f6;
 }
 
-/* Sección de Productos Destacados */
+/* Página de productos - Productos Destacados */
 #productos-destacados {
     padding: 3rem;
     background-color: #e0f2f1;
@@ -344,7 +275,6 @@ header nav ul li a:hover {
 }
 
 /* Sección de Información sobre la Tienda */
-
 
 /* Estilo para la sección "Quiénes somos" */
 #quienes-somos {
@@ -368,92 +298,13 @@ header nav ul li a:hover {
     color: #2c3e50;
 }
 
-#quienes-somos a {
-    color: #0277bd;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#quienes-somos a:hover {
-    color: #01579b;
-}
-
-/* Estilo para la sección "¿Por qué elegir?" */
-#por-que-elegir {
-    background-color: #ffffff;
-    padding: 4rem 1rem;
-    text-align: center;
-    color: #2c3e50;
-    border-top: 2px solid #0277bd; /* Línea superior para destacar */
-}
-
-#por-que-elegir h2 {
-    font-size: 2.5rem;
-    color: #004d40;
-    margin-bottom: 2rem;
-}
-
-#por-que-elegir p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-}
-
-.beneficios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.beneficio {
-    background-color: #f1f8e9; /* Fondo suave */
-    border: 1px solid #b2ebf2;
-    padding: 2rem;
-    width: 280px;
+#quienes-somos img {
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 1rem;
 }
 
-.beneficio h3 {
-    font-size: 1.6rem;
-    color: #006064;
-    margin-bottom: 1rem;
-}
-
-.beneficio p {
-    font-size: 1rem;
-    color: #2c3e50;
-}
-
-.beneficio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-#nosotros-info {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e0f7fa;
-}
-
-#nosotros-info h2 {
-    font-size: 2rem;
-    color: #004d40;
-}
-
-#nosotros-info p {
-    font-size: 1.1rem;
-    color: #004d40;
-}
-
-/* Estilos de la fuente Orbitron */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 /* Footer */
 .footer {
     background: linear-gradient(45deg, #0277bd, #004d40);
@@ -582,5 +433,3 @@ header nav ul li a:hover {
         justify-content: center;
     }
 }
-
-
