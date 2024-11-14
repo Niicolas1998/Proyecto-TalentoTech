@@ -10,14 +10,13 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!-- Conexión con el archivo CSS -->
 
-
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="body">
             <!-- Logo -->
-            <a href="index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../assets/img/logo.png" alt="Logo Talento Refrishop">
             </a>
             <span class="store-name">Refrishop</span>
@@ -42,65 +41,158 @@
         </nav>
     </header>
     <main>
-        <h1>Página de Productos</h1>
-        <p>Contenido de la página de productos...</p>
+        <!-- Sección de Productos Destacados -->
+        <section id="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="productos-container">
+                <!-- Tarjetas de productos destacados -->
+                <div class="producto-card2">
+                    <img src="ruta-imagen-producto1.jpg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto 1.</p>
+                    <p class="precio">$500</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-producto2.jpg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto 2.</p>
+                    <p class="precio">$600</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-producto3.jpg" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto 3.</p>
+                    <p class="precio">$700</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-producto4.jpg" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p>Descripción breve del producto 4.</p>
+                    <p class="precio">$800</p>
+                    <button>Ver producto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Productos en Oferta -->
+        <section id="productos-oferta">
+            <h2>Productos en Oferta</h2>
+            <div class="productos-container">
+                <!-- Tarjetas de productos en oferta -->
+                <div class="producto-card2">
+                    <img src="ruta-imagen-oferta1.jpg" alt="Producto en oferta 1">
+                    <h3>Producto Oferta 1</h3>
+                    <p>Descripción breve del producto en oferta 1.</p>
+                    <p class="precio">$300 <span class="descuento">$500</span></p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-oferta2.jpg" alt="Producto en oferta 2">
+                    <h3>Producto Oferta 2</h3>
+                    <p>Descripción breve del producto en oferta 2.</p>
+                    <p class="precio">$400 <span class="descuento">$600</span></p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-oferta3.jpg" alt="Producto en oferta 3">
+                    <h3>Producto Oferta 3</h3>
+                    <p>Descripción breve del producto en oferta 3.</p>
+                    <p class="precio">$450 <span class="descuento">$650</span></p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-oferta4.jpg" alt="Producto en oferta 4">
+                    <h3>Producto Oferta 4</h3>
+                    <p>Descripción breve del producto en oferta 4.</p>
+                    <p class="precio">$500 <span class="descuento">$700</span></p>
+                    <button>Ver producto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Todos los Productos -->
+        <section id="todos-los-productos">
+            <h2>Todos los Productos</h2>
+            <div class="productos-container">
+                <!-- Tarjetas de todos los productos -->
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos1.jpg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto 1.</p>
+                    <p class="precio">$500</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos2.jpg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto 2.</p>
+                    <p class="precio">$600</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos3.jpg" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto 3.</p>
+                    <p class="precio">$700</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos4.jpg" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p>Descripción breve del producto 4.</p>
+                    <p class="precio">$800</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos5.jpg" alt="Producto 5">
+                    <h3>Producto 5</h3>
+                    <p>Descripción breve del producto 5.</p>
+                    <p class="precio">$850</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos6.jpg" alt="Producto 6">
+                    <h3>Producto 6</h3>
+                    <p>Descripción breve del producto 6.</p>
+                    <p class="precio">$950</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos7.jpg" alt="Producto 7">
+                    <h3>Producto 7</h3>
+                    <p>Descripción breve del producto 7.</p>
+                    <p class="precio">$1000</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos8.jpg" alt="Producto 8">
+                    <h3>Producto 8</h3>
+                    <p>Descripción breve del producto 8.</p>
+                    <p class="precio">$1100</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos9.jpg" alt="Producto 9">
+                    <h3>Producto 9</h3>
+                    <p>Descripción breve del producto 9.</p>
+                    <p class="precio">$1200</p>
+                    <button>Ver producto</button>
+                </div>
+                <div class="producto-card2">
+                    <img src="ruta-imagen-todos10.jpg" alt="Producto 10">
+                    <h3>Producto 10</h3>
+                    <p>Descripción breve del producto 10.</p>
+                    <p class="precio">$1300</p>
+                    <button>Ver producto</button>
+                </div>
+            </div>
+        </section>
     </main>
 
-     <!-- Sección de Ofertas Especiales -->
-     <section id="ofertas">
-        <h2>Ofertas Especiales</h2>
-        <div class="productos">
-            <!-- Producto en Oferta 1 -->
-            <div class="producto">
-                <img src="assets/img/Compresor 1.jpg" alt="Aire acondicionado oferta 1">
-                <h3>Compresor 1 Super Oferta</h3>
-                <p>$250.00 <span class="descuento">$350.00</span></p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-            <!-- Producto en Oferta 2 -->
-            <div class="producto">
-                <img src="assets/img/Compresor 2.jpg" alt="Aire acondicionado oferta 2">
-                <h3>Compresor 2 Mega Oferta</h3>
-                <p>$275.00 <span class="descuento">$400.00</span></p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-            <!-- Producto en Oferta 3 -->
-            <div class="producto">
-                <img src="assets/img/Compresor 3.jpg" alt="Aire acondicionado oferta 3">
-                <h3>Compresor 3 Hiper oferta</h3>
-                <p>$280.00 <span class="descuento">$420.00</span></p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección de Productos Destacados -->
-    <section id="productos-destacados">
-        <h2>Productos Destacados</h2>
-        <div class="productos">
-            <!-- Producto Destacado 1 -->
-            <div class="producto">
-                <img src="assets/img/Aire 1.png" alt="Aire acondicionado 1">
-                <h3>Aire Acondicionado XYZ</h3>
-                <p>$300.00</p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-            <!-- Producto Destacado 2 -->
-            <div class="producto">
-                <img src="assets/img/Kit 1.webp" alt="Aire acondicionado 2">
-                <h3>kit Insalacion</h3>
-                <p>$450.00</p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-            <!-- Producto Destacado 3 -->
-            <div class="producto">
-                <img src="assets/img/aire-acondicionado3.jpg" alt="Aire acondicionado 3">
-                <h3>Aire Acondicionado 123</h3>
-                <p>$400.00</p>
-                <a href="pages/productos.html" class="btn">Ver detalles</a>
-            </div>
-        </div>
-    </section>
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-container">

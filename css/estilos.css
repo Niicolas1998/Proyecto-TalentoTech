@@ -191,90 +191,118 @@ header nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Página de productos - Ofertas Especiales */
-#ofertas {
-    padding: 3rem;
-    background-color: #e0f2f1;
+/* Sección PRODUCTOS */
+#productos {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
 }
 
-#ofertas h2 {
-    text-align: center;
+#productos h2 {
     font-size: 2.5rem;
     color: #004d40;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.productos {
+#productos2 {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+}
+
+#productos2 h2 {
+    font-size: 2.5rem;
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Contenedor de los productos */
+.productos-container {
+    display: flex; /* Usamos flexbox para alinear las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente fila si no hay espacio */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    justify-content: space-between; /* Distribuye el espacio de manera equitativa */
+    padding: 20px; /* Añadimos un poco de espacio interno */
+}
+
+/* Estilo para las tarjetas de productos */
+.producto-card2 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 220px; /* Asegúrate de que las tarjetas tengan un tamaño adecuado */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.producto-card2:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse sobre la tarjeta */
+}
+
+/* Imágenes dentro de las tarjetas */
+.producto-card2 img {
+    width: 100%; /* Ocupa el 100% del ancho disponible en la tarjeta */
+    height: auto;
+}
+
+/* Títulos dentro de las tarjetas */
+.producto-card2 h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Precios */
+.producto-card2 .precio {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Botones */
+.producto-card2 button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.producto-card2 button:hover {
+    background-color: #218838;
+}
+
+/* Títulos de las secciones */
+section h2 {
+    font-size: 2rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Peso de fuente para hacerlo más fuerte */
+    color: #333; /* Color oscuro para buena legibilidad */
+    text-align: center; /* Centra el texto del título */
+    margin: 20px 0; /* Añade espacio por encima y debajo del título */
+    padding: 10px 0; /* Añade un poco de espacio interno en la parte superior e inferior */
+    background-color: #f4f4f4; /* Fondo suave para separarlo visualmente */
+    border-radius: 5px; /* Bordes redondeados para un look más moderno */
+    width: 100%; /* Asegura que el título ocupe todo el ancho disponible */
+}
+
+/* Centra todo el contenido dentro de la sección */
+section2 {
     display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centra el texto dentro de la sección */
 }
 
-.producto {
-    background-color: #ffffff;
-    border: 1px solid #b2ebf2;
-    padding: 1.5rem;
-    width: 250px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+/* Opcional: Si quieres resaltar partes del título */
+section h2 span {
+    color: #28a745; /* Color verde para resaltar partes específicas del título */
 }
 
-.producto:hover {
-    transform: translateY(-5px);
-}
 
-.producto img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
 
-.producto h3 {
-    font-size: 1.5rem;
-    color: #006064;
-}
-
-.producto p {
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-}
-
-.producto .precio {
-    font-size: 1.2rem;
-    color: #0277bd;
-    margin: 0.5rem 0;
-}
-
-.btn {
-    background-color: #4fc3f7;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #29b6f6;
-}
-
-/* Página de productos - Productos Destacados */
-#productos-destacados {
-    padding: 3rem;
-    background-color: #e0f2f1;
-}
-
-#productos-destacados h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #004d40;
-    margin-bottom: 2rem;
-}
-
-/* Sección de Información sobre la Tienda */
 
 /* Estilo para la sección "Quiénes somos" */
 #quienes-somos {
@@ -304,6 +332,99 @@ header nav ul li a:hover {
     border-radius: 10px;
     margin-top: 1rem;
 }
+
+
+#por-que-elegir i {
+    color: #0277bd; /* Color azul para los iconos */
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+    font-size: 1.2rem;
+    vertical-align: middle; /* Alineación vertical con el texto */
+}
+
+/* Estilo específico para los iconos dentro de los títulos */
+.beneficio h3 i {
+    font-size: 1.5rem;
+    color: #004d40; /* Color verde oscuro para destacar los iconos de los títulos */
+}
+
+/* Ajuste de estilo para los párrafos */
+.beneficio p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+
+/*MAPA */
+
+#ubicacion {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mapa-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.mapa-contenedor iframe {
+    width: 100%;
+    max-width: 800px;  /* El tamaño máximo del mapa */
+    height: 450px;
+    border: none;
+}
+
+
+/*Nosotros contactos formulario*/
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 
 /* Footer */
 .footer {
@@ -433,3 +554,4 @@ header nav ul li a:hover {
         justify-content: center;
     }
 }
+
