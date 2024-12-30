@@ -28,6 +28,7 @@
             <div class="nav-icons">
                 <a href="carrito.html" class="icon">
                     <i class="fas fa-shopping-cart"></i>
+                    <span id="contador-carrito" class="contador-carrito">0</span> <!-- Contador de productos -->
                 </a>
                 <a href="login.html" class="icon">
                     <i class="fas fa-user"></i>
@@ -50,37 +51,57 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <p>Tel: +54 1139389966</p>
-                <p>Email: refrishop@tusitio.com</p>
-                <p>Dirección: Calle Principal 123</p>
-            </div>
-            <div class="footer-section">
-                <h3>Enlaces Útiles</h3>
-                <ul>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos de Servicio</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Síguenos</h3>
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-container">
+        <!-- Información de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Tel: +54 1139389966</p>
+            <p>Email: refrishop@tusitio.com</p>
+            <p>Dirección: Calle Principal 123</p>
         </div>
-        <p class="back-to-top">2024 Refrishop | Todos los derechos reservados.</p>
-    </footer>
 
+        <!-- Enlaces útiles -->
+        <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Suscripción al Boletín -->
+        <div class="footer-section footer-newsletter">
+            <h3>Suscríbete a Nuestro Boletín</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Ingresa tu correo">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+    <p class="back-to-top">2024 Refrishop | Todos los derechos reservados.</p>
+
+    <!-- Enlace para volver arriba -->
+    <div class="back-to-top">
+        <a href="#body">Volver arriba</a>
+    </div>
+</footer>
     <script src="../js/carrito.js"></script>
+   
 </body>
 
 </html>

@@ -666,3 +666,65 @@ button[type="submit"]:hover {
 
 /*SECCION DE API Y ADMINISTRADOR*/
 
+/* Estilos para el carrito */
+#productos-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para cada producto en el carrito */
+.producto-en-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Estilo de la imagen */
+.producto-imagen {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Contenedor de detalles del producto */
+.producto-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Detalles del producto (nombre y precio) */
+.producto-detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-producto {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.precio-producto {
+    color: #444;
+}
+
+/* Estilo del botón de eliminar */
+.eliminar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: #c0392b;
+}
