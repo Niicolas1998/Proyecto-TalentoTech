@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Talento Refrishop - Carrito</title>
+    <script src="https://kit.fontawesome.com/4d4105fec0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav id="body">
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="Logo Talento Refrishop">
+            </a>
+            <span class="store-name">Refrishop</span>
+
+            <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
+
+            <div class="nav-icons">
+                <a href="carrito.html" class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="login.html" class="icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
         </nav>
     </header>
+
     <main>
-        <h1>Carrito de Compras</h1>
-        <p>Aquí puedes revisar los productos que has agregado a tu carrito.</p>
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <div id="productos-carrito">
+                <!-- Los productos se mostrarán aquí con JavaScript -->
+            </div>
+            <div id="total">
+                <h3>Total: $<span id="total-carrito">0</span></h3>
+            </div>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Talento Refrishop</p>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Tel: +54 1139389966</p>
+                <p>Email: refrishop@tusitio.com</p>
+                <p>Dirección: Calle Principal 123</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="back-to-top">2024 Refrishop | Todos los derechos reservados.</p>
     </footer>
+
+    <script src="../js/carrito.js"></script>
 </body>
+
 </html>
